@@ -20,7 +20,7 @@ public class WeatherApp extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         String city = req.getParameter("city");
-        String apiKey = "57c2810122882870a1626f7c158e24af"; // Use a secure method for storing API keys in production
+        String apiKey = ""; // Use a secure method for storing API keys in production
 
         String apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
